@@ -1,4 +1,32 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 export default function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -35,16 +63,17 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-950">
+    <section ref={sectionRef} id="projects" className="py-20 bg-gray-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
+        <h2 className={`text-3xl sm:text-4xl font-bold text-white mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-colors group"
+              className={`bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-all group hover-lift card-interactive ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
             >
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                 {project.title}
@@ -56,7 +85,7 @@ export default function Projects() {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="text-xs px-3 py-1 bg-gray-800 text-blue-400 rounded-full"
+                    className="text-xs px-3 py-1 bg-gray-800 text-blue-400 rounded-full hover-scale-sm cursor-default"
                   >
                     {tech}
                   </span>
@@ -67,7 +96,7 @@ export default function Projects() {
               <div className="flex gap-4">
                 <a
                   href={project.link}
-                  className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-1"
+                  className="text-gray-400 hover:text-blue-400 transition-all flex items-center gap-1 hover-scale"
                 >
                   <svg
                     className="w-5 h-5"
@@ -84,7 +113,7 @@ export default function Projects() {
                 </a>
                 <a
                   href={project.github}
-                  className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-1"
+                  className="text-gray-400 hover:text-blue-400 transition-all flex items-center gap-1 hover-scale"
                 >
                   <svg
                     className="w-5 h-5"

@@ -1,3 +1,5 @@
+import LoadingScreen from "./components/LoadingScreen";
+import ScrollProgress from "./components/ScrollProgress";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,16 +10,20 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <LoadingScreen />
+      <ScrollProgress />
+      <div className="min-h-screen bg-black">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -1,20 +1,48 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 export default function Contact() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section ref={sectionRef} id="contact" className="py-20 bg-black">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+        <h2 className={`text-3xl sm:text-4xl font-bold text-white mb-8 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           Get In Touch
         </h2>
-        <p className="text-gray-400 text-lg mb-12 max-w-2xl">
+        <p className={`text-gray-400 text-lg mb-12 max-w-2xl ${isVisible ? 'animate-fade-in-up animate-delay-100' : 'opacity-0'}`}>
           I'm always interested in hearing about new projects and opportunities.
           Whether you have a question or just want to say hi, feel free to reach out!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div className={`space-y-6 ${isVisible ? 'animate-fade-in-left animate-delay-200' : 'opacity-0'}`}>
+            <div className="flex items-start gap-4 hover-scale-sm transition-transform">
+              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 hover-glow">
                 <svg
                   className="w-6 h-6 text-blue-400"
                   fill="none"
@@ -38,8 +66,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
+            <div className="flex items-start gap-4 hover-scale-sm transition-transform">
+              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 hover-glow">
                 <svg
                   className="w-6 h-6 text-blue-400"
                   fill="currentColor"
@@ -65,8 +93,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
+            <div className="flex items-start gap-4 hover-scale-sm transition-transform">
+              <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 hover-glow">
                 <svg
                   className="w-6 h-6 text-blue-400"
                   fill="currentColor"
@@ -90,14 +118,14 @@ export default function Contact() {
           </div>
 
           {/* Quick Message */}
-          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+          <div className={`bg-gray-900 border border-gray-800 rounded-lg p-6 card-interactive hover-lift ${isVisible ? 'animate-fade-in-right animate-delay-200' : 'opacity-0'}`}>
             <h3 className="text-white font-semibold mb-4">Send a Message</h3>
             <p className="text-gray-400 text-sm mb-4">
               Fill out the form below and I'll get back to you as soon as possible.
             </p>
             <a
               href="mailto:your.email@example.com?subject=Hello!&body=Hi, I'd like to get in touch with you."
-              className="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium inline-block text-center"
+              className="btn-primary w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all font-medium inline-block text-center relative z-10"
             >
               Open Email Client
             </a>

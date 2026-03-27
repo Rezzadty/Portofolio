@@ -16,7 +16,7 @@ export default function Footer() {
               href="https://github.com/Rezzadty"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
               aria-label="GitHub"
             >
               <svg
@@ -35,7 +35,7 @@ export default function Footer() {
               href="https://linkedin.com/in/rezaadityaprabowo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
               aria-label="LinkedIn"
             >
               <svg
@@ -48,7 +48,7 @@ export default function Footer() {
             </a>
             <a
               href="mailto:rezaadityaprabowo474@gmail.com"
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
               aria-label="Email"
             >
               <svg
