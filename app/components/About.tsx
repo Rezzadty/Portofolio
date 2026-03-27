@@ -35,18 +35,28 @@ export default function About() {
         </h2>
         <div className={`space-y-4 text-gray-400 text-lg leading-relaxed ${isVisible ? 'animate-fade-in-up animate-delay-100' : 'opacity-0'}`}>
           <p>
-            I'm a passionate developer with a love for creating elegant solutions
-            to complex problems. With experience in full-stack development, I
-            specialize in building modern web applications that are both
-            beautiful and functional.
+            I'm a passionate developer who is currently focusing on backend development. 
+            As a beginner in this field, I am continuously learning and improving my 
+            understanding of how to build reliable, scalable, and efficient systems, 
+            including API development and database management.
           </p>
           <p>
-            My journey in tech started [your story here], and I've been constantly
-            learning and growing ever since. I believe in writing clean, maintainable
-            code and creating user experiences that make a difference.
+            In addition to backend development, I have a growing interest in networking. 
+            I am currently studying basic networking concepts to better understand how 
+            systems communicate and how data flows across networks, which supports my 
+            goal of becoming a more well-rounded developer.
           </p>
           <p>
-            When I'm not coding, you can find me [your hobbies/interests here].
+            I also have hands-on experience in IoT projects, including an Automatic 
+            Plant Watering System and an Air Quality Monitoring System, which is 
+            currently being developed as my final project. This system integrates 
+            real-time data using Firebase and utilizes sensors such as DHT-20, MQ-7, 
+            MQ-135, and the ADS1115 module to monitor environmental conditions 
+            accurately.
+          </p>
+          <p>
+            I am committed to continuous learning, writing clean and maintainable code, 
+            and gaining real-world experience through practical projects.
           </p>
         </div>
 
@@ -56,12 +66,13 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
               "Basic Networking",
-              "Basic Operating System (Linux & Windows)",
-              "Next.js",
-              "Node.js",
-              "Python",
-              "TailwindCSS",
+              "Basic OS (Linux & Windows)",
+              "RESTful API Development",
+              "Database Management",
+              "IoT Development",
               "Git",
+              "Problem Solving",
+              "Team Collaboration"
             ].map((skill, index) => (
               <div
                 key={skill}

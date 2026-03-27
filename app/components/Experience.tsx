@@ -28,28 +28,14 @@ export default function Experience() {
   }, []);
 
   const experiences = [
-    {
-      title: "Senior Developer",
-      company: "Company Name",
-      period: "2023 - Present",
-      description:
-        "Leading development of key features and mentoring junior developers. Working with modern tech stack including React, Next.js, and Node.js.",
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Another Company",
-      period: "2021 - 2023",
-      description:
-        "Built and maintained multiple web applications. Collaborated with design and product teams to deliver high-quality solutions.",
-    },
-    {
-      title: "Junior Developer",
-      company: "First Company",
-      period: "2020 - 2021",
-      description:
-        "Started my professional journey, learning best practices and contributing to various projects. Gained experience in both frontend and backend development.",
-    },
-  ];
+  {
+    title: "Internship at CV. Bartech Utama Mandiri",
+    company: "CV. Bartech Utama Mandiri",
+    period: "June 2025 - August 2025",
+    description:
+      "During my internship at CV. Bartech Utama Mandiri, I worked on various projects that enhanced my skills in backend development, IT support, and networking. I contributed to a Laravel-based web application for MBG (Makan Bergizi Gratis) by implementing new features and managing databases using MySQL. Additionally, I developed a Python-based QR code system used for item scanning in kitchen operations. I was also involved in building an IoT web application that integrates MQTT data using React.js for the frontend and Express.js for the backend, where I focused on backend development; however, this project was developed as a prototype and not deployed. Furthermore, I supported IT operations by troubleshooting PC issues."
+  },
+];
 
   return (
     <section ref={sectionRef} id="experience" className="py-20 bg-black">
