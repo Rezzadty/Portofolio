@@ -6,7 +6,7 @@ export default function Hero() {
           Hi, I'm <span className="text-gradient">Reza Aditya Prabowo</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-400 mb-8 animate-fade-in-up animate-delay-200">
-           Junior Backend Developer | Still Learning in Networking | IoT & PC Enthusiast
+           Junior Backend Developer | Still Learning in Networking 
         </p>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-300">
           Welcome to my portfolio! I'm Reza Aditya Prabowo, a backend junior developer with a strong interest in networking and IoT. 
@@ -17,7 +17,7 @@ export default function Hero() {
             href="#projects"
             className="btn-primary px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all font-medium hover-scale relative z-10"
           >
-            View My Work
+            View My Projects
           </a>
           <a
             href="#contact"

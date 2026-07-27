@@ -67,7 +67,7 @@ export default function Experience() {
                 {exp.techStack && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.techStack.map((tech, i) => (
-                      <span key={i} className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full">
+                      <span key={`${tech}-${i}`} className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full">
                         {tech}
                       </span>
                     ))}
