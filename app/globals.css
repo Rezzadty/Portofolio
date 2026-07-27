@@ -112,9 +112,30 @@ html {
 }
 
 /* Loading spinner */
-@keyframes spin {
-  to {
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-orbit {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(60px, -40px);
+  }
+  50% {
+    transform: translate(0, -60px);
+  }
+  75% {
+    transform: translate(-60px, -40px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
@@ -321,7 +342,7 @@ html {
   border: 4px solid rgba(59, 130, 246, 0.1);
   border-top-color: #3b82f6;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: loader-spin 1s linear infinite !important;
 }
 
 /* Loading screen */

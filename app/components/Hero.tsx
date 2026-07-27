@@ -6,10 +6,10 @@ export default function Hero() {
           Hi, I'm <span className="text-gradient">Reza Aditya Prabowo</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-400 mb-8 animate-fade-in-up animate-delay-200">
-           Beginer Developer | Beginer in Networking | IoT Enthusiast
+           Junior Backend Developer | Still Learning in Networking | IoT & PC Enthusiast
         </p>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-300">
-          Welcome to my portfolio! I'm Reza Aditya Prabowo, a backend beginner developer with a strong interest in networking and IoT. 
+          Welcome to my portfolio! I'm Reza Aditya Prabowo, a backend junior developer with a strong interest in networking and IoT. 
           Explore my projects, experience, and get in touch to collaborate on exciting opportunities.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">

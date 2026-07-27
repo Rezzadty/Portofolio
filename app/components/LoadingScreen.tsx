@@ -6,7 +6,6 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1500);
@@ -18,8 +17,10 @@ export default function LoadingScreen() {
 
   return (
     <div className={`loading-screen ${!isLoading ? 'hidden' : ''}`}>
-      <div className="text-center">
-        <div className="loading-spinner mx-auto mb-4"></div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
+        <div style={{ width: 50, height: 50, animation: "loader-orbit 2s ease-in-out infinite" }}>
+          <div className="loading-spinner"></div>
+        </div>
         <p className="text-gray-400 text-lg font-medium">Loading Portfolio...</p>
       </div>
     </div>
