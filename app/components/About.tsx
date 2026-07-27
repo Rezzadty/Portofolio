@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function About() {
           <div className="float-none md:float-left mx-auto md:mx-0 md:mr-8 mb-6 md:mb-4 flex justify-center md:block">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-blue-400 transition-colors">
               <img 
-                src="/images/Picture.png" 
+                src="/images/Picture.jpg" 
                 alt="Reza Aditya Prabowo" 
                 className="w-full h-full object-cover"
               />
@@ -79,11 +80,12 @@ export default function About() {
           <h3 className="text-2xl font-bold text-white mb-6">Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "Laravel",
+              "Express.js",
               "REST API Development",
               "Database Management",
               "Python",
-              "Git",
+              "Linux & Windows OS",
+              "Laravel",
               "React Native Expo",
               "React.js"
             ].map((skill, index) => (
