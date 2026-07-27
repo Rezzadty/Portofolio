@@ -63,7 +63,7 @@ export default function Experience() {
                   </span>
                 </div>
                 <p className="text-blue-400 mb-3">{exp.company}</p>
-                <p className="text-gray-400">{exp.description}</p>
+                <p className="text-gray-400 text-justify">{exp.description}</p>
                 {exp.techStack && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.techStack.map((tech, i) => (
