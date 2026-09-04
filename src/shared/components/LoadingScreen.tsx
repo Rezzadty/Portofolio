@@ -17,11 +17,11 @@ export function LoadingScreen() {
 
   return (
     <div className={`loading-screen ${!isLoading ? "hidden" : ""}`}>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
-        <div style={{ width: 50, height: 50, animation: "loader-orbit 2s ease-in-out infinite" }}>
-          <div className="loading-spinner"></div>
-        </div>
-        <p className="text-gray-400 text-lg font-medium">Loading Portfolio...</p>
+      <div className="flex flex-col items-center gap-4">
+        <div className="loading-spinner" />
+        <p className="text-gray-400 text-sm font-medium tracking-wide">
+          Loading Portfolio...
+        </p>
       </div>
     </div>
   );

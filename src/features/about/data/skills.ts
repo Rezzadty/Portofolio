@@ -3,7 +3,7 @@ export const SKILLS: string[] = [
   "REST API Development",
   "Database Management",
   "Python",
-  "Linux & Windows OS",
+  "Basic Linux & Windows OS",
   "Laravel",
   "React Native Expo",
   "React.js",

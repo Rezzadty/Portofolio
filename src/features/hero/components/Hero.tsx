@@ -1,7 +1,13 @@
 export function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Subtle radial ambient glow */}
+      <div
+        className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-blue-600/15 blur-[120px] animate-pulse-glow"
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-down">
           Hi, I&apos;m <span className="text-gradient">Reza Aditya Prabowo</span>
         </h1>

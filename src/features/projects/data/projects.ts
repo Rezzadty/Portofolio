@@ -2,11 +2,18 @@ import { ProjectItem } from "../types/project";
 
 export const PROJECTS: ProjectItem[] = [
   {
-    title: "Gomi — Air Quality Monitoring App",
+    title: "Text-To-Speech",
     description:
-      "A mobile dashboard monitoring application built with React Native and Expo. Visualizes real-time sensor data from an ESP8266 microcontroller that transmits air quality readings (CO, NH3, temperature, humidity) to Firebase Realtime Database.",
-    technologies: ["React Native", "Expo", "Firebase", "ESP8266", "NativeWind"],
-    github: "https://github.com/Rezzadty/Gomi",
+      "Turn your Word documents into audio files. Perfect for listening to articles, essays, or study materials on the go.",
+    technologies: ["Python", "FFmpeg", "Gemini API key"],
+    github: "https://github.com/Rezzadty/Text-To-Speech",
+  },
+  {
+    title: "ExpenseTracker App",
+    description:
+      "A personal expense tracking mobile app to help you monitor daily spending, set budgets, categorize expenses, and analyze spending trends.",
+    technologies: ["React Native", "Expo", "Firebase", "NativeWind"],
+    github: "https://github.com/Rezzadty/ExpenseTracker",
   },
   {
     title: "IoT Air Quality Dashboard",
@@ -25,7 +32,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     title: "GomiTools — Volume Scanner CLI",
     description:
-      "A PowerShell CLI tool that scans and displays volume (disk) information on your PC. Features interactive menu to scan volumes, display details (label, file system, health, size), and detect temporary files for cleanup.",
+      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC..",
     technologies: ["PowerShell", "Windows", "CLI"],
     github: "https://github.com/Rezzadty/gomitool",
   },

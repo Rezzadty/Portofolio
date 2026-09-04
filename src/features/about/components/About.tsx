@@ -29,7 +29,7 @@ export function About() {
 
           <div className="space-y-4 text-justify">
             <p>
-              I&apos;m an <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro</strong>,
+              I&apos;m an <strong>Informatics Engineering graduate from Dian Nuswantoro University</strong>,
               specializing in backend web development. I am proficient in JavaScript, Node.js,
               and Express.js for building scalable backend systems and RESTful APIs. I also have
               hands-on experience in mobile application development using React Native (Expo),

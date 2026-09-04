@@ -13,7 +13,6 @@ export function Projects() {
   const [currentPage, setCurrentPage] = useState(0);
   const [displayPage, setDisplayPage] = useState(0);
   const [phase, setPhase] = useState<AnimationPhase>("visible");
-  const [direction, setDirection] = useState<"left" | "right">("right");
   const pendingPage = useRef<number | null>(null);
 
   useEffect(() => {
@@ -21,7 +20,7 @@ export function Projects() {
       const t = setTimeout(() => {
         setDisplayPage(pendingPage.current ?? 0);
         setPhase("entering");
-      }, 350);
+      }, 200);
       return () => clearTimeout(t);
     }
     if (phase === "entering") {
@@ -35,7 +34,7 @@ export function Projects() {
     if (phase === "entered") {
       const t = setTimeout(() => {
         setPhase("visible");
-      }, 500);
+      }, 550);
       return () => clearTimeout(t);
     }
   }, [phase]);
@@ -45,7 +44,6 @@ export function Projects() {
   const goToPage = useCallback(
     (targetPage: number) => {
       if (targetPage === currentPage || phase !== "visible") return;
-      setDirection(targetPage > currentPage ? "right" : "left");
       pendingPage.current = targetPage;
       setCurrentPage(targetPage);
       setPhase("exit");
@@ -65,23 +63,6 @@ export function Projects() {
     displayPage * PROJECTS_PER_PAGE,
     (displayPage + 1) * PROJECTS_PER_PAGE
   );
-
-  const getSlideClass = () => {
-    if (phase === "exit") {
-      return direction === "right"
-        ? "opacity-0 -translate-x-12 pointer-events-none"
-        : "opacity-0 translate-x-12 pointer-events-none";
-    }
-    if (phase === "entering") {
-      return direction === "right"
-        ? "opacity-0 translate-x-12"
-        : "opacity-0 -translate-x-12";
-    }
-    if (phase === "entered") {
-      return "opacity-100 translate-x-0 transition-all duration-500 ease-out";
-    }
-    return "opacity-100 translate-x-0";
-  };
 
   return (
     <section ref={ref} id="projects" className="py-20 bg-gray-950 overflow-hidden">
@@ -135,14 +116,13 @@ export function Projects() {
           </div>
         </div>
 
-        <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-8 transition-all duration-350 ease-in-out ${getSlideClass()}`}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[480px]">
           {currentProjects.map((project, index) => (
             <ProjectCard
-              key={project.title}
+              key={`${displayPage}-${project.title}`}
               project={project}
               index={index}
+              phase={phase}
               isVisible={isVisible}
             />
           ))}

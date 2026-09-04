@@ -3,16 +3,23 @@ import { ProjectItem } from "../types/project";
 interface ProjectCardProps {
   project: ProjectItem;
   index: number;
+  phase: "visible" | "exit" | "entering" | "entered";
   isVisible: boolean;
 }
 
-export function ProjectCard({ project, index, isVisible }: ProjectCardProps) {
+export function ProjectCard({ project, index, phase, isVisible }: ProjectCardProps) {
+  const isCardVisible = isVisible && phase !== "exit" && phase !== "entering";
+
   return (
     <div
-      className={`bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-all card-interactive flex flex-col justify-between ${
-        isVisible ? "animate-fade-in-up" : "opacity-0"
+      className={`bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-all duration-500 card-interactive flex flex-col justify-between hover-lift transform ${
+        isCardVisible
+          ? "opacity-100 translate-y-0 scale-100"
+          : "opacity-0 translate-y-6 scale-[0.97] pointer-events-none"
       }`}
-      style={{ animationDelay: `${0.1 + (index % 4) * 0.1}s` }}
+      style={{
+        transitionDelay: isCardVisible ? `${(index % 4) * 110}ms` : "0ms",
+      }}
     >
       <div>
         <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
