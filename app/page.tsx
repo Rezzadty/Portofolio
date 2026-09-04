@@ -1,12 +1,12 @@
-import LoadingScreen from "./components/LoadingScreen";
-import ScrollProgress from "./components/ScrollProgress";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { LoadingScreen } from "@/src/shared/components/LoadingScreen";
+import { ScrollProgress } from "@/src/shared/components/ScrollProgress";
+import { Navbar } from "@/src/shared/components/Navbar";
+import { Footer } from "@/src/shared/components/Footer";
+import { Hero } from "@/src/features/hero/components/Hero";
+import { About } from "@/src/features/about/components/About";
+import { Experience } from "@/src/features/experience/components/Experience";
+import { Projects } from "@/src/features/projects/components/Projects";
+import { Contact } from "@/src/features/contact/components/Contact";
 
 export default function Home() {
   return (

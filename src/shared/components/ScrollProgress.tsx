@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function ScrollProgress() {
+export function ScrollProgress() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -14,14 +14,14 @@ export default function ScrollProgress() {
     };
 
     window.addEventListener("scroll", updateScrollProgress);
-    updateScrollProgress(); // Initial calculation
+    updateScrollProgress();
 
     return () => window.removeEventListener("scroll", updateScrollProgress);
   }, []);
 
   return (
     <div className="scroll-progress">
-      <div 
+      <div
         className="scroll-progress-bar"
         style={{ transform: `scaleX(${scrollProgress / 100})` }}
       />

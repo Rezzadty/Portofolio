@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function LoadingScreen() {
+export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function LoadingScreen() {
   if (!isLoading) return null;
 
   return (
-    <div className={`loading-screen ${!isLoading ? 'hidden' : ''}`}>
+    <div className={`loading-screen ${!isLoading ? "hidden" : ""}`}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
         <div style={{ width: 50, height: 50, animation: "loader-orbit 2s ease-in-out infinite" }}>
           <div className="loading-spinner"></div>
