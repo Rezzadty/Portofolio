@@ -3,7 +3,7 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Subtle radial ambient glow */}
       <div
-        className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-blue-600/15 blur-[120px] animate-pulse-glow"
+        className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-[140px] animate-pulse-glow"
         aria-hidden="true"
       />
 
@@ -12,22 +12,23 @@ export function Hero() {
           Hi, I&apos;m <span className="text-gradient">Reza Aditya Prabowo</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-400 mb-8 animate-fade-in-up animate-delay-200">
-          Junior Backend Developer | Still Learning in Networking
+          Backend Developer | Networking & Software Quality Enthusiast 
         </p>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-300">
-          Welcome to my portfolio! I&apos;m Reza Aditya Prabowo, a backend junior developer with a strong interest in networking and IoT.
-          Explore my projects, experience, and get in touch to collaborate on exciting opportunities.
+          Backend developer with a growing interest in networking, IoT, and software quality. 
+          I build reliable APIs and enjoy exploring how systems connect, scale, and get properly tested. 
+          Take a look at my projects, or reach out — I&apos;d love to connect.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">
           <a
             href="#projects"
-            className="btn-primary px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all font-medium hover-scale relative z-10"
+            className="btn-primary px-8 py-3 bg-emerald-500 text-black font-semibold rounded-lg hover:bg-emerald-400 transition-all hover-scale relative z-10"
           >
             View My Projects
           </a>
           <a
             href="#contact"
-            className="px-8 py-3 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400 hover:text-white transition-all font-medium hover-scale"
+            className="px-8 py-3 border border-emerald-400/50 text-emerald-400 rounded-lg hover:bg-emerald-400/10 hover:border-emerald-400 transition-all font-medium hover-scale"
           >
             Get In Touch
           </a>

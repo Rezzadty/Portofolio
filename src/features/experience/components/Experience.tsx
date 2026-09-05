@@ -16,24 +16,24 @@ export function Experience() {
           {EXPERIENCES.map((exp, index) => (
             <div
               key={index}
-              className={`border-l-2 border-blue-400 pl-6 pb-8 relative ${isVisible ? "animate-fade-in-left" : "opacity-0"}`}
+              className={`border-l-2 border-emerald-400 pl-6 pb-8 relative ${isVisible ? "animate-fade-in-left" : "opacity-0"}`}
               style={{ animationDelay: `${0.1 + index * 0.15}s` }}
             >
-              <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-400 rounded-full hover-scale"></div>
+              <div className="absolute -left-2 top-0 w-4 h-4 bg-emerald-400 rounded-full hover-scale"></div>
 
-              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-all card-interactive hover-lift">
+              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-emerald-400 transition-all card-interactive hover-lift">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                   <h3 className="text-xl font-bold text-white">{exp.title}</h3>
                   <span className="text-sm text-gray-500 mt-1 sm:mt-0">
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-blue-400 mb-3">{exp.company}</p>
+                <p className="text-emerald-400 mb-3">{exp.company}</p>
                 <p className="text-gray-400 text-justify">{exp.description}</p>
                 {exp.techStack && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.techStack.map((tech, i) => (
-                      <span key={`${tech}-${i}`} className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full">
+                      <span key={`${tech}-${i}`} className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
                         {tech}
                       </span>
                     ))}
@@ -44,7 +44,7 @@ export function Experience() {
                     href={exp.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all hover-scale"
+                    className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg hover:border-emerald-400 hover:text-emerald-400 transition-all hover-scale"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path

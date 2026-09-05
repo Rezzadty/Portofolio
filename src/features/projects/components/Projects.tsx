@@ -94,7 +94,7 @@ export function Projects() {
               onClick={prevPage}
               disabled={currentPage === 0 || phase !== "visible"}
               aria-label="Previous page"
-              className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-blue-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
+              className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-emerald-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
@@ -107,7 +107,7 @@ export function Projects() {
               onClick={nextPage}
               disabled={currentPage === totalPages - 1 || phase !== "visible"}
               aria-label="Next page"
-              className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-blue-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
+              className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-emerald-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -143,7 +143,7 @@ export function Projects() {
                   aria-label={`Go to page ${i + 1}`}
                   className={`transition-all duration-300 rounded-full cursor-pointer ${
                     currentPage === i
-                      ? "w-8 h-2 bg-blue-400"
+                      ? "w-8 h-2 bg-emerald-400"
                       : "w-2 h-2 bg-gray-700 hover:bg-gray-500"
                   }`}
                 />

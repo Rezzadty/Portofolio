@@ -27,7 +27,7 @@ export function Navbar() {
           <div className="shrink-0">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-2xl font-bold text-white hover:text-blue-400 transition-colors"
+              className="text-2xl font-bold text-white hover:text-emerald-400 transition-colors"
             >
               Reza Aditya Prabowo
             </button>
@@ -38,7 +38,7 @@ export function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-gray-300 hover:text-blue-400 transition-colors"
+                className="text-gray-300 hover:text-emerald-400 transition-colors"
               >
                 {link.label}
               </button>
@@ -77,7 +77,7 @@ export function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-gray-300 hover:text-blue-400 transition-colors text-left"
+                  className="text-gray-300 hover:text-emerald-400 transition-colors text-left"
                 >
                   {link.label}
                 </button>

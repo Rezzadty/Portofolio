@@ -2,13 +2,6 @@ import { ProjectItem } from "../types/project";
 
 export const PROJECTS: ProjectItem[] = [
   {
-    title: "Text-To-Speech",
-    description:
-      "Turn your Word documents into audio files. Perfect for listening to articles, essays, or study materials on the go.",
-    technologies: ["Python", "FFmpeg", "Gemini API key"],
-    github: "https://github.com/Rezzadty/Text-To-Speech",
-  },
-  {
     title: "ExpenseTracker App",
     description:
       "A personal expense tracking mobile app to help you monitor daily spending, set budgets, categorize expenses, and analyze spending trends.",
@@ -16,11 +9,18 @@ export const PROJECTS: ProjectItem[] = [
     github: "https://github.com/Rezzadty/ExpenseTracker",
   },
   {
-    title: "IoT Air Quality Dashboard",
+    title: "Text-To-Speech",
     description:
-      "A web-based real-time dashboard monitoring system built as part of a bachelor's final project. Receives and displays air quality data from an ESP8266 microcontroller through Firebase Realtime Database with interactive data visualization.",
-    technologies: ["React", "Vite", "Firebase", "CSS", "IoT"],
-    github: "https://github.com/Rezzadty/IOT-DashboardAirQuality",
+      "Turn your Word documents into audio files. Perfect for listening to articles, essays, or study materials on the go.",
+    technologies: ["Python", "FFmpeg", "Gemini API key"],
+    github: "https://github.com/Rezzadty/Text-To-Speech",
+  },
+  {
+    title: "GomiTools — Volume Scanner CLI",
+    description:
+      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC..",
+    technologies: ["PowerShell", "Windows", "CLI"],
+    github: "https://github.com/Rezzadty/gomitool",
   },
   {
     title: "BackendTele — Telegram Notification Backend",
@@ -30,11 +30,11 @@ export const PROJECTS: ProjectItem[] = [
     github: "https://github.com/Rezzadty/BackendTele",
   },
   {
-    title: "GomiTools — Volume Scanner CLI",
+    title: "IoT Air Quality Dashboard",
     description:
-      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC..",
-    technologies: ["PowerShell", "Windows", "CLI"],
-    github: "https://github.com/Rezzadty/gomitool",
+      "A web-based real-time dashboard monitoring system built as part of a bachelor's final project. Receives and displays air quality data from an ESP8266 microcontroller through Firebase Realtime Database with interactive data visualization.",
+    technologies: ["React", "Vite", "Firebase", "CSS", "IoT"],
+    github: "https://github.com/Rezzadty/IOT-DashboardAirQuality",
   },
   {
     title: "Ticketing App",

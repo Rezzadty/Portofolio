@@ -20,7 +20,7 @@ export function About() {
             <button
               type="button"
               onClick={() => setIsModalOpen(true)}
-              className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-blue-400 transition-colors cursor-zoom-in block text-left group focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-emerald-400 transition-colors cursor-zoom-in block text-left group focus:outline-none focus:ring-2 focus:ring-emerald-400"
               aria-label="View larger profile photo"
             >
               <img
@@ -28,7 +28,7 @@ export function About() {
                 alt="Reza Aditya Prabowo"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors"></div>
+              <div className="absolute inset-0 bg-emerald-500/10 group-hover:bg-transparent transition-colors"></div>
             </button>
           </div>
 
@@ -46,13 +46,13 @@ export function About() {
               , which uses real-time Firebase monitoring alongside DHT-20, MQ-7, MQ-135, and ADS1115 sensors to track environmental data.
             </p>
             <p>
-              I'm currently expanding into networking fundamentals and software analysis including flowcharting and User Acceptance Testing (UAT), 
-              though I'm still early in learning these and have a way to go before I'd call myself proficient. It's part of a broader 
-              effort to understand not just how to build systems, but how they're planned, tested, and delivered.
+              I&apos;m currently expanding into networking fundamentals and software analysis including flowcharting and User Acceptance Testing (UAT), 
+              though I&apos;m still early in learning these and have a way to go before I&apos;d call myself proficient. It&apos;s part of a broader 
+              effort to understand not just how to build systems, but how they&apos;re planned, tested, and delivered.
             </p>
             <p>
-             I'm passionate about continuous learning and solving real-world problems through technology, 
-             and I'm looking for opportunities to apply and grow these skills in a professional environment.
+             I&apos;m passionate about continuous learning and solving real-world problems through technology, 
+             and I&apos;m looking for opportunities to apply and grow these skills in a professional environment.
             </p>
           </div>
           <div className="clear-both"></div>
@@ -64,7 +64,7 @@ export function About() {
             {SKILLS.map((skill, index) => (
               <div
                 key={`${skill}-${index}`}
-                className="bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-center text-gray-300 hover:border-blue-400 hover:text-blue-400 transition-all hover-scale-sm card-interactive"
+                className="bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-center text-gray-300 hover:border-emerald-400 hover:text-emerald-400 transition-all hover-scale-sm card-interactive"
                 style={{ animationDelay: `${0.3 + index * 0.05}s` }}
               >
                 {skill}

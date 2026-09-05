@@ -14,7 +14,7 @@ export function Footer() {
               href="https://github.com/Rezzadty"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
+              className="text-gray-400 hover:text-emerald-400 transition-all hover-scale"
               aria-label="GitHub"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@ export function Footer() {
               href="https://linkedin.com/in/rezaadityaprabowo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
+              className="text-gray-400 hover:text-emerald-400 transition-all hover-scale"
               aria-label="LinkedIn"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export function Footer() {
             </a>
             <a
               href="mailto:rezaadityaprabowo474@gmail.com"
-              className="text-gray-400 hover:text-blue-400 transition-all hover-scale"
+              className="text-gray-400 hover:text-emerald-400 transition-all hover-scale"
               aria-label="Email"
             >
               <svg

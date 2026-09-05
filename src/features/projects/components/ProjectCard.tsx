@@ -12,7 +12,7 @@ export function ProjectCard({ project, index, phase, isVisible }: ProjectCardPro
 
   return (
     <div
-      className={`bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-blue-400 transition-all duration-500 card-interactive flex flex-col justify-between hover-lift transform ${
+      className={`bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-emerald-400 transition-all duration-500 card-interactive flex flex-col justify-between hover-lift transform ${
         isCardVisible
           ? "opacity-100 translate-y-0 scale-100"
           : "opacity-0 translate-y-6 scale-[0.97] pointer-events-none"
@@ -28,7 +28,7 @@ export function ProjectCard({ project, index, phase, isVisible }: ProjectCardPro
           {project.technologies.map((tech, i) => (
             <span
               key={`${tech}-${i}`}
-              className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full"
+              className="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"
             >
               {tech}
             </span>
@@ -40,7 +40,7 @@ export function ProjectCard({ project, index, phase, isVisible }: ProjectCardPro
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary flex items-center gap-2 text-white hover:text-blue-400 transition-all font-medium hover-scale"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg hover:border-emerald-400 hover:text-emerald-400 transition-all hover-scale text-sm font-medium"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -49,7 +49,7 @@ export function ProjectCard({ project, index, phase, isVisible }: ProjectCardPro
               clipRule="evenodd"
             />
           </svg>
-          View Code
+          GitHub
         </a>
       </div>
     </div>
