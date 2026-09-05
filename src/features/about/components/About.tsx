@@ -17,48 +17,42 @@ export function About() {
 
         <div className={`block text-gray-400 text-lg leading-relaxed ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="float-none md:float-left mx-auto md:mx-0 md:mr-8 mb-6 md:mb-4 flex justify-center md:block">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-blue-400 transition-colors">
+            <button
+              type="button"
+              onClick={() => setIsModalOpen(true)}
+              className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-blue-400 transition-colors cursor-zoom-in block text-left group focus:outline-none focus:ring-2 focus:ring-blue-400"
+              aria-label="View larger profile photo"
+            >
               <img
                 src="/images/Picture.jpg"
                 alt="Reza Aditya Prabowo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-blue-500/10 pointer-events-none"></div>
-            </div>
+              <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors"></div>
+            </button>
           </div>
 
           <div className="space-y-4 text-justify">
             <p>
-              I&apos;m an <strong>Informatics Engineering graduate from Dian Nuswantoro University</strong>,
-              specializing in backend web development. I am proficient in JavaScript, Node.js,
-              and Express.js for building scalable backend systems and RESTful APIs. I also have
-              hands-on experience in mobile application development using React Native (Expo),
-              automation scripting with Python, and Backend-as-a-Service (BaaS) solutions using
-              Firebase Realtime Database and Firebase Authentication.
+              I&apos;m a <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro (UDINUS) Semarang, with a GPA of 3.66/4.00. </strong>
+               My primary focus is backend web development, where I work with JavaScript, Node.js, and Express.js 
+               to build scalable RESTful APIs and backend systems.
             </p>
             <p>
-              As a backend developer, I am continuously learning and improving my understanding
-              of software architecture, API development, database management, and scalable system
-              design. I am committed to writing clean, maintainable, and well-structured code
-              while adapting to emerging technologies to deliver efficient software solutions.
+              Beyond backend development, I have hands-on experience across several areas of software engineering: 
+              mobile app development with React Native (Expo), automation scripting with Python, and Backend-as-a-Service 
+              integration using Firebase Realtime Database and Firebase Authentication. I also enjoy IoT projects 
+              including an Automatic Plant Watering System and Gomi, an Air Quality Monitoring System developed as my thesis
+              , which uses real-time Firebase monitoring alongside DHT-20, MQ-7, MQ-135, and ADS1115 sensors to track environmental data.
             </p>
             <p>
-              In addition to backend development, I have a growing interest in networking.
-              I am currently studying networking fundamentals to better understand how systems
-              communicate, how data flows across networks, and how infrastructure supports
-              modern applications, helping me become a more well-rounded developer.
+              I'm currently expanding into networking fundamentals and software analysis including flowcharting and User Acceptance Testing (UAT), 
+              though I'm still early in learning these and have a way to go before I'd call myself proficient. It's part of a broader 
+              effort to understand not just how to build systems, but how they're planned, tested, and delivered.
             </p>
             <p>
-              I also have hands-on experience in IoT projects, including an Automatic Plant
-              Watering System and an Air Quality Monitoring System named <strong>Gomi</strong>,
-              which was developed as my final project. Gomi integrates real-time monitoring
-              using Firebase and utilizes sensors such as the DHT-20, MQ-7, MQ-135, and ADS1115
-              module to collect and monitor environmental data accurately.
-            </p>
-            <p>
-              I am passionate about continuous learning, solving real-world problems through
-              technology, and gaining practical experience by building reliable, scalable,
-              and impactful software solutions.
+             I'm passionate about continuous learning and solving real-world problems through technology, 
+             and I'm looking for opportunities to apply and grow these skills in a professional environment.
             </p>
           </div>
           <div className="clear-both"></div>
