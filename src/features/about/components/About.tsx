@@ -34,25 +34,21 @@ export function About() {
 
           <div className="space-y-4 text-justify">
             <p>
-              I&apos;m a <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro (UDINUS) Semarang, with a GPA of 3.66/4.00. </strong>
-               My primary focus is backend web development, where I work with JavaScript, Node.js, and Express.js 
-               to build scalable RESTful APIs and backend systems.
+              I&apos;m an <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro (UDINUS) Semarang</strong>, 
+              graduating with a GPA of 3.66/4.00. My focus is backend web development — building scalable RESTful 
+              APIs with Node.js, Express.js, and Laravel.
             </p>
             <p>
-              Beyond backend development, I have hands-on experience across several areas of software engineering: 
-              mobile app development with React Native (Expo), automation scripting with Python, and Backend-as-a-Service 
-              integration using Firebase Realtime Database and Firebase Authentication. I also enjoy IoT projects 
-              including an Automatic Plant Watering System and Gomi, an Air Quality Monitoring System developed as my thesis
-              , which uses real-time Firebase monitoring alongside DHT-20, MQ-7, MQ-135, and ADS1115 sensors to track environmental data.
+              Alongside backend work, I&apos;ve built hands-on experience across mobile development with React Native (Expo), 
+              Python automation, and Firebase integration (Realtime Database, Authentication). My thesis project, 
+              Gomi, reflects this range — an IoT-based air quality monitoring system using DHT-20, MQ-7, MQ-135, and 
+              ADS1115 sensors, with real-time Firebase monitoring and a Telegram alert bot. I&apos;m currently deepening my knowledge 
+              of networking fundamentals and software analysis and flowcharting to better understand how systems 
+              are planned and delivered, not just built.
             </p>
             <p>
-              I&apos;m currently expanding into networking fundamentals and software analysis including flowcharting and User Acceptance Testing (UAT), 
-              though I&apos;m still early in learning these and have a way to go before I&apos;d call myself proficient. It&apos;s part of a broader 
-              effort to understand not just how to build systems, but how they&apos;re planned, tested, and delivered.
-            </p>
-            <p>
-             I&apos;m passionate about continuous learning and solving real-world problems through technology, 
-             and I&apos;m looking for opportunities to apply and grow these skills in a professional environment.
+              I enjoy solving real-world problems through technology, and I&apos;m looking for a professional environment 
+              where I can keep building on these skills.
             </p>
           </div>
           <div className="clear-both"></div>

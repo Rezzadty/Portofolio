@@ -6,7 +6,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     company: "CV. Bartech Utama Mandiri",
     period: "June 2025 - August 2025",
     description:
-      "During the internship, I developed a Python-based automation system for QR-code generation to optimize inventory tracking and asset management for kitchen facilities, enabling faster, more accurate, and better-structured recording and tracking of assets. I also contributed to the development of an internal Laravel-based web application by adding several new features and optimizing the database schema, resulting in more efficient, consistent data management and improved system scalability going forward. In addition, I was involved in building a backend architecture using Express.js to process IoT telemetry data received via an MQTT broker, as part of developing a monitoring interface prototype for hospital devices. Beyond software development responsibilities, I also actively assisted in troubleshooting hardware issues, helping ensure smooth operation of the IT infrastructure in the workplace.",
+  "During this internship, I built a Python-based automation system for QR-code asset tracking, streamlining inventory management for kitchen facilities. I also contributed to an internal Laravel web application by adding new features and optimizing the database schema for better scalability, and developed an Express.js backend to process IoT telemetry via MQTT as part of a monitoring interface prototype for hospital devices. Alongside development work, I assisted with hardware troubleshooting to help keep the workplace's IT infrastructure running smoothly.",
     techStack: [
       "React.js",
       "Express.js",
