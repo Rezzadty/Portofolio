@@ -5,7 +5,6 @@ import { useIntersectionObserver } from "@/src/shared/hooks/useIntersectionObser
 import { PROJECTS } from "../data/projects";
 import { AnimationPhase } from "../types/project";
 import { ProjectCard } from "./ProjectCard";
-
 const PROJECTS_PER_PAGE = 4;
 
 export function Projects() {
@@ -116,7 +115,7 @@ export function Projects() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[480px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-480px">
           {currentProjects.map((project, index) => (
             <ProjectCard
               key={`${displayPage}-${project.title}`}

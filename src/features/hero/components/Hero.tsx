@@ -12,12 +12,14 @@ export function Hero() {
           Hi, I&apos;m <span className="text-gradient">Reza Aditya Prabowo</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-400 mb-8 animate-fade-in-up animate-delay-200">
-          Backend Developer | Networking & Software Quality Enthusiast 
+          Backend Developer | IT Support &amp; Networking Enthusiast
         </p>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-300">
-          Backend developer with a growing interest in networking, IoT, and software quality. 
-          I build reliable APIs and enjoy exploring how systems connect, scale, and get properly tested. 
-          Take a look at my projects, or reach out — I&apos;d love to connect.
+          Software engineer specializing in building scalable RESTful APIs with Node.js and Express.js, 
+          with a strong focus on backend architecture, IT Support, and technical support. 
+          Driven by a passion for understanding how complex systems connect, scale, and recover under pressure, 
+          I focus on diagnosing root causes and engineering reliable solutions. 
+          Feel free to explore my projects or reach out to connect!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">
           <a
