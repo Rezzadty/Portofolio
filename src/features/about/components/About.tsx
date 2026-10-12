@@ -34,21 +34,25 @@ export function About() {
 
           <div className="space-y-4 text-justify">
             <p>
-              I&apos;m an <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro (UDINUS) Semarang</strong>, 
-              graduating with a GPA of 3.66/4.00. My focus is backend web development — building scalable RESTful 
-              APIs with Node.js, Express.js, and Laravel.
+              I&apos;m an <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro
+              (UDINUS) Semarang</strong> with a GPA of 3.66/4.00, focused on two areas:{" "}
+              <strong>backend development</strong> and <strong>IT / technical support</strong>. On the
+              backend side, I build RESTful APIs with Node.js, Express.js, and Laravel. On the support
+              side, I handle hardware troubleshooting, networking, and IT infrastructure maintenance,
+              experience I gained during my internship at CV. Bartec Utama Mandiri.
             </p>
             <p>
-              Alongside backend work, I&apos;ve built hands-on experience across mobile development with React Native (Expo), 
-              Python automation, and Firebase integration (Realtime Database, Authentication). My thesis project, 
-              Gomi, reflects this range — an IoT-based air quality monitoring system using DHT-20, MQ-7, MQ-135, and 
-              ADS1115 sensors, with real-time Firebase monitoring and a Telegram alert bot. I&apos;m currently deepening my knowledge 
-              of networking fundamentals and software analysis and flowcharting to better understand how systems 
-              are planned and delivered, not just built.
+              <strong>Networking </strong>is the area I&apos;m most actively developing. I&apos;m
+              deepening my understanding of network fundamentals, along with system analysis and
+              flowcharting, to see how systems are planned, connected, and delivered, not just built.
+              My thesis project, Gomi, put this into practice: an IoT air quality monitoring system
+              using DHT-20, MQ-7, MQ-135, and ADS1115 sensors, with real-time Firebase monitoring and
+              a Telegram alert bot, deployed live at a government office in Semarang.
             </p>
             <p>
-              I enjoy solving real-world problems through technology, and I&apos;m looking for a professional environment 
-              where I can keep building on these skills.
+              I enjoy solving real-world problems through technology, and I&apos;m looking for an
+              entry-level role in <strong>IT Support, Technical Support, or Backend Development</strong>{" "}
+              where I can keep growing my technical and networking skills.
             </p>
           </div>
           <div className="clear-both"></div>
