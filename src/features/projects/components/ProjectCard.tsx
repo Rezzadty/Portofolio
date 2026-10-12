@@ -22,7 +22,13 @@ export function ProjectCard({ project, index, phase, isVisible }: ProjectCardPro
       }}
     >
       <div>
-        <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
+        <div className="flex items-start justify-between gap-3 mb-2">
+          <h3 className="text-xl font-bold text-white">{project.title}</h3>
+        </div>
+        <div className="flex items-center gap-2 text-xs text-emerald-400 mb-3 font-mono">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
+          <span>{project.languages.join(", ")}</span>
+        </div>
         <p className="text-gray-400 mb-4 text-justify">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {project.technologies.map((tech, i) => (
