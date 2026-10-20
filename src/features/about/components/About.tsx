@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useIntersectionObserver } from "@/src/shared/hooks/useIntersectionObserver";
 import { SKILLS } from "../data/skills";
 
@@ -23,10 +24,13 @@ export function About() {
               className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-gray-800 hover:border-emerald-400 transition-colors cursor-zoom-in block text-left group focus:outline-none focus:ring-2 focus:ring-emerald-400"
               aria-label="View larger profile photo"
             >
-              <img
+              <Image
                 src="/images/Picture.jpg"
                 alt="Reza Aditya Prabowo"
+                width={224}
+                height={224}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                priority
               />
               <div className="absolute inset-0 bg-emerald-500/10 group-hover:bg-transparent transition-colors"></div>
             </button>
@@ -91,9 +95,11 @@ export function About() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <img
+            <Image
               src="/images/Picture.jpg"
               alt="Reza Aditya Prabowo"
+              width={800}
+              height={800}
               className="max-w-full max-h-[90vh] object-contain rounded-lg border border-gray-800 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

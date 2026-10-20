@@ -1,14 +1,14 @@
-import { LoadingScreen } from "@/src/shared/components/LoadingScreen";
-import { ScrollProgress } from "@/src/shared/components/ScrollProgress";
-import { Navbar } from "@/src/shared/components/Navbar";
-import { Footer } from "@/src/shared/components/Footer";
-import { Hero } from "@/src/features/hero/components/Hero";
-import { About } from "@/src/features/about/components/About";
-import { Experience } from "@/src/features/experience/components/Experience";
-import { Education } from "@/src/features/education/components/Education";
-import { Certifications } from "@/src/features/certifications/components/Certifications";
-import { Projects } from "@/src/features/projects/components/Projects";
-import { Contact } from "@/src/features/contact/components/Contact";
+import { LoadingScreen } from "@components/LoadingScreen";
+import { ScrollProgress } from "@components/ScrollProgress";
+import { Navbar } from "@components/Navbar";
+import { Footer } from "@components/Footer";
+import { Hero } from "@features/hero/components/Hero";
+import { About } from "@features/about/components/About";
+import { Experience } from "@features/experience/components/Experience";
+import { Education } from "@features/education/components/Education";
+import { Certifications } from "@features/certifications/components/Certifications";
+import { Projects } from "@features/projects/components/Projects";
+import { Contact } from "@features/contact/components/Contact";
 
 export default function Home() {
   return (
