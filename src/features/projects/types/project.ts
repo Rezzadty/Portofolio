@@ -5,5 +5,3 @@ export interface ProjectItem {
   github: string;
   languages: string[];
 }
-
-export type AnimationPhase = "visible" | "exit" | "entering" | "entered";

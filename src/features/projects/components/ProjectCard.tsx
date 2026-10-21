@@ -1,9 +1,10 @@
 import { ProjectItem } from "../types/project";
+import { AnimationPhase } from "@/src/shared/types/animation";
 
 interface ProjectCardProps {
   project: ProjectItem;
   index: number;
-  phase: "visible" | "exit" | "entering" | "entered";
+  phase: AnimationPhase;
   isVisible: boolean;
 }
 

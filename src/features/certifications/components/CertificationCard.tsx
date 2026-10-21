@@ -1,4 +1,5 @@
-import { CertificationItem, AnimationPhase } from "../types/certification";
+import { CertificationItem } from "../types/certification";
+import { AnimationPhase } from "@/src/shared/types/animation";
 
 interface CertificationCardProps {
   cert: CertificationItem;

@@ -8,5 +8,3 @@ export interface CertificationItem {
   description?: string;
   skills?: string[];
 }
-
-export type AnimationPhase = "visible" | "exit" | "entering" | "entered";

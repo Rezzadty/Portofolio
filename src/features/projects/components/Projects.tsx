@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useIntersectionObserver } from "@/src/shared/hooks/useIntersectionObserver";
 import { PROJECTS } from "../data/projects";
-import { AnimationPhase } from "../types/project";
+import { AnimationPhase } from "@/src/shared/types/animation";
 import { ProjectCard } from "./ProjectCard";
 const PROJECTS_PER_PAGE = 4;
 
@@ -92,7 +92,6 @@ export function Projects() {
             <button
               onClick={prevPage}
               disabled={currentPage === 0 || phase !== "visible"}
-              suppressHydrationWarning
               aria-label="Previous page"
               className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-emerald-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
             >
@@ -106,7 +105,6 @@ export function Projects() {
             <button
               onClick={nextPage}
               disabled={currentPage === totalPages - 1 || phase !== "visible"}
-              suppressHydrationWarning
               aria-label="Next page"
               className="p-2 rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-emerald-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover-scale-sm cursor-pointer"
             >
@@ -155,7 +153,6 @@ export function Projects() {
               <button
                 onClick={prevPage}
                 disabled={currentPage === 0 || phase !== "visible"}
-                suppressHydrationWarning
                 className="px-4 py-2 text-sm rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
               >
                 Previous
@@ -166,7 +163,6 @@ export function Projects() {
               <button
                 onClick={nextPage}
                 disabled={currentPage === totalPages - 1 || phase !== "visible"}
-                suppressHydrationWarning
                 className="px-4 py-2 text-sm rounded-lg bg-gray-900 border border-gray-800 text-gray-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
               >
                 Next
