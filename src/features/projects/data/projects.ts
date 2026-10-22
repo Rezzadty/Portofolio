@@ -22,7 +22,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "GomiTools — Volume Scanner CLI",
     languages: ["PowerShell"],
     description:
-      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC..",
+      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC.",
     technologies: ["PowerShell", "Windows", "CLI"],
     github: "https://github.com/Rezzadty/gomitool",
   },

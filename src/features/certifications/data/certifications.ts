@@ -35,7 +35,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
   {
     title: "Build an AI Agent",
     issuer: "IBM",
-    issueDate: "Jully 2026",
+     issueDate: "July 2026",
     credentialId: "9f21656e-5e6e-4347-9e0f-e7df11d83a2b",
     credentialUrl: "https://www.credly.com/badges/9f21656e-5e6e-4347-9e0f-e7df11d83a2b/linked_in_profile",
     description:

@@ -115,7 +115,7 @@ export function Projects() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-480px">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[480px]">
           {currentProjects.map((project, index) => (
             <ProjectCard
               key={`${displayPage}-${project.title}`}
