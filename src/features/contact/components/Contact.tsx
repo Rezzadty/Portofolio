@@ -75,7 +75,7 @@ export function Contact() {
           >
             <h3 className="text-white font-semibold mb-4">Send a Message</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Fill out the form below and I&apos;ll get back to you as soon as possible.
+              Send me an email directly and I&apos;ll get back to you as soon as possible.
             </p>
             <a
               href="mailto:rezaadityaprabowo474@gmail.com?subject=Hello!&body=Hi, I'd like to get in touch with you."

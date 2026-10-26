@@ -20,7 +20,7 @@ export function Certifications() {
       const t = setTimeout(() => {
         setDisplayPage(pendingPage.current ?? 0);
         setPhase("entering");
-      }, 200);
+      }, 350);
       return () => clearTimeout(t);
     }
     if (phase === "entering") {
@@ -116,16 +116,27 @@ export function Certifications() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[300px]">
-          {currentCerts.map((cert, index) => (
-            <CertificationCard
-              key={`${displayPage}-${cert.title}`}
-              cert={cert}
-              index={index}
-              phase={phase}
-              isVisible={isVisible}
-            />
-          ))}
+        <div className="relative min-h-[300px]">
+          <div
+            className={`absolute inset-0 flex items-center justify-center z-10 pointer-events-none transition-all duration-300 ease-out ${
+              phase === "exit" || phase === "entering"
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-90"
+            }`}
+          >
+            <div className="loading-spinner w-8 h-8 border-2" role="status" aria-label="Loading certifications" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {currentCerts.map((cert, index) => (
+              <CertificationCard
+                key={`${displayPage}-${cert.title}`}
+                cert={cert}
+                index={index}
+                phase={phase}
+                isVisible={isVisible}
+              />
+            ))}
+          </div>
         </div>
 
         {totalPages > 1 && (
