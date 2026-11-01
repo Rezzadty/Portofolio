@@ -231,7 +231,7 @@ body::before {
 .stagger-fast { --stagger-step: 45ms; }
 .stagger-slow { --stagger-step: 110ms; }
 
-/* Native scroll-driven reveals — no JS needed (progressive enhancement) */
+/* Native scroll-driven reveals: no JS needed (progressive enhancement) */
 @supports (animation-timeline: view()) {
   .reveal-auto {
     animation: fade-slide linear both;

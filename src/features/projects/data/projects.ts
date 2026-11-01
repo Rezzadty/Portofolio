@@ -6,7 +6,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "ExpenseTracker App",
     languages: ["TypeScript"],
     description:
-      "A personal expense tracking mobile app to help you monitor daily spending, set budgets, categorize expenses, and analyze spending trends.",
+      "A mobile app for tracking daily expenses, setting budgets, and analyzing spending trends.",
     technologies: ["React Native", "Expo", "Firebase", "NativeWind"],
     github: "https://github.com/Rezzadty/ExpenseTracker",
   },
@@ -14,23 +14,23 @@ export const PROJECTS: ProjectItem[] = [
     title: "IoT Air Quality Dashboard",
     languages: ["React", "JavaScript"],
     description:
-      "A web-based real-time dashboard monitoring system built as part of a bachelor's final project. Receives and displays air quality data from an ESP8266 microcontroller through Firebase Realtime Database with interactive data visualization.",
+      "A web dashboard built for my bachelor's thesis. Displays real-time air quality data streamed from an ESP8266 microcontroller via Firebase Realtime Database.",
     technologies: ["React", "Vite", "Firebase", "CSS", "IoT"],
     github: "https://github.com/Rezzadty/IOT-DashboardAirQuality",
   },
   {
-    title: "GomiTools — Volume Scanner CLI",
+    title: "GomiTools: Volume Scanner CLI",
     languages: ["PowerShell"],
     description:
-      "A simple PowerShell CLI tool that scans and displays volume (disk) information on your PC.",
+      "A PowerShell CLI tool that scans and displays disk volume information on Windows.",
     technologies: ["PowerShell", "Windows", "CLI"],
     github: "https://github.com/Rezzadty/gomitool",
   },
   {
-    title: "BackendTele — Telegram Notification Backend",
+    title: "BackendTele: Telegram Notification Backend",
     languages: ["JavaScript"],
     description:
-      "An Express.js backend service that acts as a backup notification channel for the Gomi project. Polls Firebase Realtime Database to detect dangerous air quality conditions and automatically sends Telegram alerts when the main app fails to deliver notifications.",
+      "An Express.js backend service acting as a fallback alert channel for the Gomi IoT project. Polls Firebase Realtime Database and dispatches Telegram alerts when dangerous thresholds are reached.",
     technologies: ["Express.js", "Node.js", "Firebase", "Telegram Bot API"],
     github: "https://github.com/Rezzadty/BackendTele",
   },
@@ -38,7 +38,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Text-To-Speech",
     languages: ["Python"],
     description:
-      "Turn your Word documents into audio files. Perfect for listening to articles, essays, or study materials on the go.",
+      "Converts Word documents into audio files using Python and the Gemini API.",
     technologies: ["Python", "FFmpeg", "Gemini API key"],
     github: "https://github.com/Rezzadty/Text-To-Speech",
   },
@@ -46,7 +46,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "PDF to JSON Converter",
     languages: ["TypeScript", "JavaScript"],
     description:
-      "A client-side PDF to JSON converter that reconstructs document coordinates and extracts semantic sections and contact information directly in the browser.",
+      "A client-side tool that parses PDF documents, reconstructs layout coordinates, and extracts structured sections directly in the browser.",
     technologies: ["Next.js", "React", "pdfjs-dist", "TailwindCSS"],
     github: "https://github.com/Rezzadty/convertjson",
   },
@@ -54,7 +54,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Ticketing App",
     languages: ["PHP", "Blade"],
     description:
-      "A web-based ticketing application built with Laravel. Features ticket management, user authentication, and a clean UI with Tailwind CSS for handling support tickets and task tracking.",
+      "A Laravel application for managing support tickets and task tracking, featuring role-based authentication and a Tailwind CSS interface.",
     technologies: ["Laravel", "PHP", "MySQL", "TailwindCSS", "Vite"],
     github: "https://github.com/Rezzadty/ticketing_app",
   },
@@ -62,7 +62,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Abstract Reasoning Platform",
     languages: ["TypeScript"],
     description:
-      "An interactive assessment platform simulating pre-employment cognitive tests with timed sessions, randomized question sets, and detailed pattern breakdown reviews.",
+      "An assessment platform simulating pre-employment cognitive tests with timed sessions, randomized questions, and pattern breakdown reviews.",
     technologies: ["Next.js", "React", "TailwindCSS"],
     github: "https://github.com/Rezzadty/cogtest",
   }

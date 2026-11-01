@@ -15,13 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rezaditya.me"),
   title: "Reza Aditya P - Portfolio",
-  description: "Welcome to my portfolio! I'm Reza Aditya Prabowo, a backend beginner developer with an interest in networking. Explore my projects, experience, and get in touch to collaborate on exciting opportunities.",
+  description:
+    "Portfolio of Reza Aditya Prabowo: an Informatics graduate focused on backend development, IT support, and networking.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Reza Aditya P - Portfolio",
-    description: "Backend beginner developer with an interest in networking.",
+    description:
+      "Portfolio of Reza Aditya Prabowo: backend development, IT support, and networking.",
     url: "https://rezaditya.me",
     siteName: "Reza Aditya Portfolio",
     locale: "en_US",
@@ -30,7 +32,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Reza Aditya P - Portfolio",
-    description: "Backend beginner developer with an interest in networking.",
+    description:
+      "Portfolio of Reza Aditya Prabowo: backend development, IT support, and networking.",
   },
 };
 
@@ -45,7 +48,8 @@ export default function RootLayout({
     "name": "Reza Aditya Prabowo",
     "url": "https://rezaditya.me",
     "jobTitle": "Backend Developer",
-    "description": "Backend beginner developer with an interest in networking.",
+    "description":
+      "Informatics graduate focused on backend development, IT support, and networking.",
     "sameAs": [
       "https://github.com/Rezzadty"
     ]

@@ -13,8 +13,7 @@ export function Contact() {
           Get In Touch
         </h2>
         <p className={`text-gray-400 text-lg mb-12 max-w-2xl ${isVisible ? "animate-fade-in-up animate-delay-100" : "opacity-0"}`}>
-          I&apos;m always interested in hearing about new projects and opportunities.
-          Whether you have a question or just want to say hi, feel free to reach out!
+          Feel free to reach out for project collaborations, technical roles, or networking.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -73,9 +72,9 @@ export function Contact() {
               isVisible ? "animate-fade-in-right animate-delay-200" : "opacity-0"
             }`}
           >
-            <h3 className="text-white font-semibold mb-4">Send a Message</h3>
+            <h3 className="text-white font-semibold mb-4">Send Message</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Send me an email directly and I&apos;ll get back to you as soon as possible.
+              Send an email directly and I will get back to you as soon as possible.
             </p>
             <a
               href="mailto:rezaadityaprabowo474@gmail.com?subject=Hello!&body=Hi, I'd like to get in touch with you."

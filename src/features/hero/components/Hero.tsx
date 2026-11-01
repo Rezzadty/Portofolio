@@ -15,11 +15,8 @@ export function Hero() {
           Backend Developer | IT Support &amp; Networking Enthusiast
         </p>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-300">
-          Software engineer specializing in building scalable RESTful APIs with Node.js and Express.js, 
-          with a strong focus on backend architecture, IT Support, and technical support. 
-          Driven by a passion for understanding how complex systems connect, scale, and recover under pressure, 
-          I focus on diagnosing root causes and engineering reliable solutions. 
-          Feel free to explore my projects or reach out to connect!
+          Software engineer building REST APIs with Node.js and Express.js, with hands-on
+          experience in IT support, hardware troubleshooting, and network operations.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">
           <a

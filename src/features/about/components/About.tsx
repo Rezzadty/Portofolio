@@ -38,25 +38,24 @@ export function About() {
 
           <div className="space-y-4 text-justify">
             <p>
-              I&apos;m an <strong>Informatics Engineering graduate from Universitas Dian Nuswantoro
-              (UDINUS) Semarang</strong> with a GPA of 3.66/4.00, focused on two areas:{" "}
-              <strong>backend development</strong> and <strong>IT / technical support</strong>. On the
-              backend side, I build RESTful APIs with Node.js, Express.js, and Laravel. On the support
-              side, I handle hardware troubleshooting, networking, and IT infrastructure maintenance,
-              experience I gained during my internship at CV. Bartec Utama Mandiri.
+              I graduated in Informatics Engineering from Universitas Dian Nuswantoro
+              (UDINUS) Semarang with a 3.66/4.00 GPA, focused on backend development
+              and IT support. On the backend, I build RESTful APIs with Node.js, Express.js,
+              and Laravel. In IT support, I handle hardware troubleshooting, networking,
+              and infrastructure maintenance, drawing on hands-on experience from my
+              internship at CV. Bartec Utama Mandiri.
             </p>
             <p>
-              <strong>Networking </strong>is the area I&apos;m most actively developing. I&apos;m
-              deepening my understanding of network fundamentals, along with system analysis and
-              flowcharting, to see how systems are planned, connected, and delivered, not just built.
-              My thesis project, Gomi, put this into practice: an IoT air quality monitoring system
-              using DHT-20, MQ-7, MQ-135, and ADS1115 sensors, with real-time Firebase monitoring and
-              a Telegram alert bot, deployed live at a government office in Semarang.
+              I am actively expanding my networking and systems analysis skills.
+              My thesis project put this into practice: an IoT air quality monitoring system
+              using DHT-20, MQ-7, MQ-135, and ADS1115 sensors, real-time Firebase monitoring,
+              and a Telegram alert bot, deployed on the server rack at the Regional III Land
+              and Building Tax Payment Service Post, Semarang.
             </p>
             <p>
-              I enjoy solving real-world problems through technology, and I&apos;m looking for an
-              entry-level role in <strong>IT Support, Technical Support, or Backend Development</strong>{" "}
-              where I can keep growing my technical and networking skills.
+              I am seeking an entry-level role in IT support, technical support, or
+              backend development where I can contribute to reliable operations and
+              keep growing my infrastructure skills.
             </p>
           </div>
           <div className="clear-both"></div>

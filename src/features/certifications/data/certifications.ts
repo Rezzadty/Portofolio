@@ -19,7 +19,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
     credentialUrl:
       "https://drive.google.com/file/d/1S8t4CaV6-SBwaP2zDq_HjpYO1kqcmwS1/view?usp=sharing",
     description:
-      "Intensive training on developing and integrating autonomous AI agents, LLM tool-calling workflows, and automation scripts for modern software engineering.",
+      "Practical training on building autonomous AI agents, LLM tool-calling workflows, and automation scripts for software engineering.",
     skills: ["AI Agents", "Python", "Automation", "LLM Integration"],
   },
   {
@@ -29,13 +29,13 @@ export const CERTIFICATIONS: CertificationItem[] = [
     credentialId: "IDN-1785958978-180-75418",
     credentialUrl: "https://drive.google.com/file/d/1MHIdO-8Pd_cOw-Y1PsOtXrTOs188xeol/view?usp=sharing",
     description:
-      "Foundational networking certification covering IP addressing, subnetting, and core network infrastructure concepts",
+      "Foundational networking certification covering IP addressing, subnetting, and core network infrastructure concepts.",
     skills: ["Ip Address", "Networking Fundamental", "Computer Networking"],
   },
   {
     title: "Build an AI Agent",
     issuer: "IBM",
-     issueDate: "July 2026",
+    issueDate: "July 2026",
     credentialId: "9f21656e-5e6e-4347-9e0f-e7df11d83a2b",
     credentialUrl: "https://www.credly.com/badges/9f21656e-5e6e-4347-9e0f-e7df11d83a2b/linked_in_profile",
     description:
